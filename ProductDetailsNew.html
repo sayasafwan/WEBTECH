@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - LETSHOP.CO</title>
+    <link rel="stylesheet" href="PD.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@6.3.7/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@6.3.7/dist/ionic/ionic.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="PDN.js" defer></script>
+</head>
+<body>
+    <!-- Promo Banner -->
+    <div class="promo">
+        <div class="promo-wrapper">
+            <div class="promo-text">
+                <span class="first-part">Sign up and get 20% off your first order.</span>
+                <span class="second-part" style="text-decoration: underline;" id="signup-link">Sign up now</span>
+            </div>
+            <div class="close-promo">
+                <ion-icon name="close"></ion-icon>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <div class="navbar-container">
+        <div class="navbar-wrapper">
+            <div class="menu-option">&#8801;</div>
+            <div class="brand-name-1">LETSHOP.CO</div>
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+            </svg>
+                <li><a href="#">On Sale</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brands</a></li>
+            </ul>
+            <div class="payment-icons">
+                <div class="search-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="search-option bi bi-search"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                    <ion-searchbar show-cancel-button="focus" class="custom"></ion-searchbar>
+                </div>
+                <div class="icon-container">
+                    <!-- Cart Icon -->
+                    <a href="cart.html" aria-label="Go to Cart">
+                        <ion-icon class="icon" name="cart-outline"></ion-icon>
+                    </a>
+                    <!-- Profile Icon -->
+                    <a href="#" aria-label="Go to Profile">
+                        <ion-icon class="icon" name="person-circle-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <p id="menu">Home > Shop > Men > Baju Batik</p>
+
+    <!-- Main Content -->
+    <main>
+      <section class="product-section">
+        <div class="left-column">
+            <img src="images/batik-angsana-lilac.jpg" alt="Baju Melayu">
+            <img src="images/batik-angsana-monochrome.jpg" alt="Baju Melayu">
+            <img src="images/batik-angsana-stoneblack.jpg" alt="Baju Melayu">
+        </div>
+        <div class="right-column">
+            <img src="images/batik-angsana-lilac.jpg" alt="Main product image">
+        </div>
+   
+        <div class="product-details">
+            <h1 class="product-title">Baju Batik </h1>
+            <div class="product-rating">
+                <span>⭐⭐⭐⭐☆</span>
+                <span>4/5</span>
+            </div>
+            <div class="product-price">RM 189</div>
+            <p class="product-description">This stylish Baju Melayu is perfect for everyday wear.</p>
+            <!-- Color Selection -->
+            <div class="color">
+                <p class="options-title">Select Colors:</p>
+                <div class="color-options">
+                    <div class="color-option" style="background-color: yellowgreen;" aria-label="Brow"></div>
+                    <div class="color-option" style="background-color: rgb(10, 140, 210);" aria-label="Blue"></div>
+                    <div class="color-option" style="background-color: grey;" aria-label="Ashgrey"></div>
+                </div>
+            </div>
+            <!-- Size Selection -->
+            <p class="options-title">Choose Size:</p>
+            <div class="size-options">
+                <button aria-label="Size Small">Small</button>
+                <button aria-label="Size Medium">Medium</button>
+                <button aria-label="Size Large">Large</button>
+                <button aria-label="Size Extra Large">Extra-Large</button>
+            </div>
+            <div class="quantity-selector">
+                <button class="quantity-btn">-</button>
+                <span class="quantity-value">1</span>
+                <button class="quantity-btn">+</button>
+              </div>
+              <a href="cart.html">
+              <button class="add-to-cart-btn">Add to Cart</button> 
+              </a>
+                </div>
+            </section>
+        </div>
+        </main>
+
+    <!-- Reviews Section -->
+
+    <div class="tab-container">
+        <div class="tab-item">Product Details</div>
+        <div class="tab-item active">Rating & Reviews</div>
+        <div class="tab-item">FAQs</div>
+    </div>
+    
+    <section class="reviews-section">
+        <header class="reviews-header">
+            <h2>All Reviews (51)</h2>
+            <div class="reviews-actions">
+                <button class="fas fa-sliders-h" title="Filter Reviews"></button>
+                <button class="sort-btn">Latest</button>
+                <button class="write-review-btn">Write a Review</button>
+            </div>
+        </header>
+        
+        <div class="reviews-grid">
+            <!-- Reviews will be dynamically added here -->
+        </div>
+        
+        <button class="load-more-btn">Load More Reviews</button>
+
+    </section>
+    </main>
+
+    <div class="suggestion">
+        <h2 class="suggestion-heading">You Might Also Like</h2>
+        <div class="product-container">
+            <!-- Products will be inserted here dynamically -->
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="bottom-container">
+        <div class="bottom-wrapper">
+
+        <form class="newsletter-card">
+            <h2 class="newsletter-title">STAY UP TO DATE ABOUT<br> OUR LATEST OFFERS</h2>
+            <div class="email-form">
+                <div class="email-input-wrapper">
+                    <ion-icon class="email-icon" name="mail-outline"></ion-icon>
+                    <label for="emailInput" class="visually-hidden">Enter your email address</label>
+                    <input type="email" id="emailInput" class="email-input" placeholder="Enter your email address"
+                        aria-label="Enter your email address" />
+                </div>
+                <button type="submit" class="subscribe-button">Subscribe to Newsletter</button>
+            </div>
+        </form>
+
+
+        <div class="footer-container">
+            <div class="brand-info">
+                <h1 class="brand-name">LETSHOP.CO</h1>
+                <p class="brand-description">We have clothes that suits your <br> style and which you’re proud to <br> wear. From women to men.</p>
+                <div class="social-media-container">
+                    <ion-icon class="social-media-icon" name="logo-twitter"></ion-icon>
+                    <ion-icon class="social-media-icon" name="logo-facebook"></ion-icon>
+                    <ion-icon class="social-media-icon" name="logo-instagram"></ion-icon>
+                </div>
+            </div>
+        
+            <div class="footer-links-container">
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">Company</h3>
+                    <nav class="footer-menu-links">
+                        About<br /><br />
+                        Features<br /><br />
+                        Works<br /><br />
+                        Career
+                    </nav>
+                </div>
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">FAQ</h3>
+                    <nav class="footer-menu-links">
+                        Account<br /><br />
+                        Manage Deliveries<br /><br />
+                        Orders<br /><br />
+                        Payment
+                    </nav>
+                </div>
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">HELP</h3>
+                    <nav class="footer-menu-links">
+                        <a href="contactpage.html">Customer Support<br /><br /></a>
+                        Delivery Details<br /><br />
+                        Terms & Conditions<br /><br />
+                        Privacy Policy
+                    </nav>
+                </div>
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">RESOURCES</h3>
+                    <nav class="footer-menu-links">
+                        Free eBook<br /><br />
+                        Development Tutorial<br /><br />
+                        How to - Blog<br /><br />
+                        Youtube Playlist
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+            <div class="all-rights-copy">
+            <div class="alling-copy">
+            <div class="copyright-text">LETSHOP.CO © 2000-2023, All Rights Reserved</div>
+
+            <div class="payment-icons-wrapper">
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c9bc555770aade8ae2ea67e64d20f54628040816316e8eebd501002f9086dfce?placeholderIfAbsent=true&apiKey=b10f70cc77814b9faaff3aed5d5026b9"
+                    class="payment-icon" alt="payment accept icon" />
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/516039ee8f501b6ebddd9b7f56b4a8d077fa0af0d2dbf35d5d51e638417129a7?placeholderIfAbsent=true&apiKey=b10f70cc77814b9faaff3aed5d5026b9"
+                    class="payment-icon" alt="payment accept icon" />
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/554f9657649cda48ad8c5009211628367357505ae929d7f35c3277fe89eef3e9?placeholderIfAbsent=true&apiKey=b10f70cc77814b9faaff3aed5d5026b9"
+                    class="payment-icon" alt="payment accept icon" />
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/d50d740e003048aebcbc7bce4daf07f781c7bfe7189f680f951080c8f7129d52?placeholderIfAbsent=true&apiKey=b10f70cc77814b9faaff3aed5d5026b9"
+                    class="payment-icon" alt="payment accept icon" />
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/a9e1881b3f780aed38acb01dae3014630f92244c830f3a5f5b1c50678d5cb2f9?placeholderIfAbsent=true&apiKey=b10f70cc77814b9faaff3aed5d5026b9"
+                    class="payment-icon" alt="payment accept icon" />
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- External Icon Usage -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

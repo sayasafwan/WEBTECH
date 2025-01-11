@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@6.3.7/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@6.3.7/dist/ionic/ionic.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta namne="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LETSHOP.CO - Category Page</title>
+    <link rel="stylesheet" href="categorystylesheet.css">
+    <script src="categoryscript.js"></script>
+</head>
+<body>
+    <!-- Promo Banner -->
+    <div class="promo">
+        <div class="promo-wrapper">
+            <div class="promo-text">
+                <span class="first-part">Sign up and get 20% off your first order.</span>
+                <span class="second-part" style="text-decoration: underline;" id="signup-link">Sign up now</span>
+            </div>
+            <div class="close-promo">
+                <ion-icon name="close"></ion-icon>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar-container">
+        <div class="navbar-wrapper">
+            <div class="menu-option">&#8801;</div>
+            <div class="brand-name-1">LETSHOP.CO</div>
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+            </svg>
+                <li><a href="#">On Sale</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brands</a></li>
+            </ul>
+            <div class="payment-icons">
+                <div class="search-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="search-option bi bi-search"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                    <ion-searchbar show-cancel-button="focus" class="custom"></ion-searchbar>
+                </div>
+                <div class="icon-container">
+                    <!-- Cart Icon -->
+                    <a href="cart.html" aria-label="Go to Cart">
+                        <ion-icon class="icon" name="cart-outline"></ion-icon>
+                    </a>
+                    <!-- Profile Icon -->
+                    <a href="#" aria-label="Go to Profile">
+                        <ion-icon class="icon" name="person-circle-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Breadcrumb -->
+   <p id="menu">Home <i class="arrow right"></i>Baju Melayu</p>
+   
+
+    <!-- Main Content -->
+<div class="main-content">
+    <!-- Filters Sidebar -->
+    <div class="filters">
+        <div class="filters-header">
+            <h2 class="filters-heading">Filters</h2>
+            <button class="fas fa-sliders-h" title="Filter Options"></button>
+        </div>
+        <div class="filter-section">
+                <div class="filter-title">Price</div>
+                <div class="price-range-container">
+                    <input type="range" id="price-range-min" class="price-range" min="0" max="210" value="0">
+                    <input type="range" id="price-range-max" class="price-range" min="0" max="210" value="210">
+                </div>
+                <div class="price-labels">
+                    <span id="min-price-label">RM0</span>
+                    <span id="max-price-label">RM210</span>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title" id="colors-title" style="cursor: pointer;">
+                    Colors
+                    <span class="arrow-indicator"></span>
+                </div>
+                <div class="color-options" id="color-options" style="display: none;">
+                    <div class="color-circle" style="background-color: red;"></div>
+                    <div class="color-circle" style="background-color: blue;"></div>
+                    <div class="color-circle" style="background-color: green;"></div>
+                    <div class="color-circle" style="background-color: yellow;"></div>
+                    <div class="color-circle" style="background-color: black;"></div>
+                    <div class="color-circle" style="background-color: purple;"></div>
+                    <div class="color-circle" style="background-color: orange;"></div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title" id="size-title" style="cursor: pointer;">
+                    Size
+                    <span class="arrow-indicator"></span>
+                </div>
+                <div class="size-options" id="size-options" style="display: none;">
+                    <div class="size-box">X-Small</div>
+                    <div class="size-box">Small</div>
+                    <div class="size-box">Medium</div>
+                    <div class="size-box">Large</div>
+                    <div class="size-box">X-Large</div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title" id="dress-style-title" style="cursor: pointer;">
+                    Dress Style
+                    <span class="arrow-indicator"></span>
+                </div>
+                <div class="clothing-options" id="clothing-options" style="display: none;">
+                    <div class="clothing-item">Baju Melayu<i class="arrow right"></i></div>
+                    <div class="clothing-item">Kurta<i class="arrow right"></i></div>
+                    <div class="clothing-item">Baju Kurung<i class="arrow right"></i></div>
+                    <div class="clothing-item">Batik<i class="arrow right"></i></div>
+                </div>
+            </div>
+            <!-- Add Apply Filters button -->
+            <button id="apply-filters" class="apply-filters-button">Apply Filters</button>
+        </div>
+
+
+  
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+            <div class="category-header">
+                <div class="header-left">
+                    <h1>All</h1>
+                </div>
+                <div class="header-right">
+                    <span class="product-count">Showing 1-9 of 100 products</span>
+                    <div class="sort-container">
+                        <span class="sort-label">Sort by:</span>
+                        <select class="sort-dropdown">
+                            <option value="">Featured</option>
+                            <option value="newest">Newest</option>
+                            <option value="popular">Most Popular</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Replace all static product cards with empty products container -->
+            <div class="products">
+                <!-- Products will be dynamically rendered here -->
+            </div>
+
+            <!-- Keep pagination -->
+            <div class="pagination">
+                <!-- Pagination will be dynamically rendered -->
+            </div>
+        </div>
+    </div>
+
+
+   <!--Footer section-->
+   <div class="bottom-container">
+    <div class="bottom-wrapper">
+
+    <form class="newsletter-card">
+        <h2 class="newsletter-title">STAY UP TO DATE ABOUT<br> OUR LATEST OFFERS</h2>
+        <div class="email-form">
+            <div class="email-input-wrapper">
+                <ion-icon class="email-icon" name="mail-outline"></ion-icon>
+                <label for="emailInput" class="visually-hidden">Enter your email address</label>
+                <input type="email" id="emailInput" class="email-input" placeholder="Enter your email address"
+                    aria-label="Enter your email address" />
+            </div>
+            <button type="submit" class="subscribe-button">Subscribe to Newsletter</button>
+        </div>
+    </form>
+
+
+    <div class="footer-container">
+        <div class="brand-info">
+            <h1 class="brand-name">LETSHOP.CO</h1>
+            <p class="brand-description">We have clothes that suits your <br> style and which you’re proud to <br> wear. From women to men.</p>
+            <div class="social-media-container">
+                <ion-icon class="social-media-icon" name="logo-twitter"></ion-icon>
+                <ion-icon class="social-media-icon" name="logo-facebook"></ion-icon>
+                <ion-icon class="social-media-icon" name="logo-instagram"></ion-icon>
+            </div>
+        </div>
+    
+            <div class="footer-links-container">
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">Company</h3>
+                    <nav class="footer-menu-links">
+                        <a>About</a><br /><br />
+                        <a>Features</a><br /><br />
+                        <a>Works</a><br /><br />
+                        <a>Career</a>
+                    </nav>
+                </div>
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">FAQ</h3>
+                    <nav class="footer-menu-links">
+                        <a>Account</a><br /><br />
+                        <a>Manage Deliveries</a><br /><br />
+                        <a>Orders</a><br /><br />
+                        <a>Payment</a>
+                    </nav>
+                </div>
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">HELP</h3>
+                    <nav class="footer-menu-links">
+                        <a href="contactpage.html">Customer Support</a><br /><br />
+                        <a>Delivery Details</a><br /><br />
+                        <a>Terms & Conditions</a><br /><br />
+                        <a">Privacy Policy</a>
+                    </nav>
+                </div>
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">RESOURCES</h3>
+                    <nav class="footer-menu-links">
+                        <a>Free eBook</a><br /><br />
+                        <a>Development Tutorial</a><br /><br />
+                        <a>How to - Blog</a><br /><br />
+                        <a>Youtube Playlist</a>
+                    </nav>
+                </div>
+            </div>
+    </div>
+
+
+
+        <div class="horizontal-divider"></div>
+        <div class="alling-copy">
+        <div class="copyright-text">LETSHOP.CO © 2000-2023, All Rights Reserved</div>
+
+        <div class="payment-icons-wrapper">
+            <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/c9bc555770aade8ae2ea67e64d20f54628040816316e8eebd501002f9086dfce?placeholderIfAbsent=true&apiKey=b10f70cc77814b9faaff3aed5d5026b9"
+                class="payment-icon" alt="payment accept icon" />
+            <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/516039ee8f501b6ebddd9b7f56b4a8d077fa0af0d2dbf35d5d51e638417129a7?placeholderIfAbsent=true&apiKey=b10f70cc77814b9faaff3aed5d5026b9"
+                class="payment-icon" alt="payment accept icon" />
+            <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/554f9657649cda48ad8c5009211628367357505ae929d7f35c3277fe89eef3e9?placeholderIfAbsent=true&apiKey=b10f70cc77814b9faaff3aed5d5026b9"
+                class="payment-icon" alt="payment accept icon" />
+            <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/d50d740e003048aebcbc7bce4daf07f781c7bfe7189f680f951080c8f7129d52?placeholderIfAbsent=true&apiKey=b10f70cc77814b9faaff3aed5d5026b9"
+                class="payment-icon" alt="payment accept icon" />
+            <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/a9e1881b3f780aed38acb01dae3014630f92244c830f3a5f5b1c50678d5cb2f9?placeholderIfAbsent=true&apiKey=b10f70cc77814b9faaff3aed5d5026b9"
+                class="payment-icon" alt="payment accept icon" />
+        </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Ion Icons Script -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+/* Responsive for iPad */
+@media (min-width: 820px) and (max-width: 1000px) {
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 820px !important;
+    }
+
+    .menu-option{
+        display: flex !important;
+        font-size: 48px;
+        cursor: pointer; 
+        color: #000000;
+    } 
+
+    ul {
+        display: none;
+    }
+
+    .search-container {
+        width: 100%;/* Make the search container take up the full width */
+        max-width: 320px;/* Set a maximum width for the search bar */
+    }
+
+    ion-searchbar.custom {
+        --background: #f0f0f0;
+        --color: #000000;
+        --placeholder-color: #000000;
+        --icon-color: #000000;
+        --clear-button-color: #000000;
+        --border-radius: 50px;
+        --height: 40px;
+        width: 320px;
+        padding: 0 10px;
+    }
+
+    .payment-icons {
+        width: 400px !important;
+        background-color: #ffffff !important;
+    }
+
+    /* Introduction Section */
+    .intro-box {
+        width: 88%;
+        padding: 18px;
+    }
+
+    .geometry-wrapper {
+        width: 100%; 
+        text-align: center; 
+        padding: 18px;
+    }
+
+    .intro-title {
+        font-size: 38px; 
+        width: 100% !important; 
+        text-align: center;
+    }
+
+    .intro-description {
+        font-size: 16px; 
+        text-align: center;
+    }
+
+    .shop-now-button {
+        width: 85%; 
+        margin: 18px auto; 
+    }
+
+    .logo-image {
+        width: 12%; 
+        margin-left: 12px; 
+        justify-content: center;
+    }
+
+    /* Product Sections */
+    .new-arrival,
+    .top-selling {
+        padding: 22px 16px; 
+    }
+
+    .new-arrival-text,
+    .top-selling-text {
+        font-size: 30px; 
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .product-card {
+        width: 240px; 
+        height: auto; 
+        margin-bottom: 18px;
+    }
+
+    .product-image {
+        height: 200px; 
+        margin-bottom: 12px;
+    }
+
+    .product-title {
+        font-size: 15px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .view-all-button {
+        width: 140px; 
+        padding: 12px;
+    }
+
+    /* Product Scroll Container */
+    .product-scroll-container {
+        gap: 18px; 
+        padding: 10px 0; 
+    }
+
+    .product-card {
+        margin-right: 18px; 
+        width: 220px;
+    }
+
+    /* Browse By Section */
+    .browse-box {
+        padding: 18px;
+        width: 88%; /* Make the box take up 88% of the screen width */
+    }
+
+    .browse-title {
+        font-size: 30px; /* Slightly reduce the title size */
+    }
+
+    .occasion-cards-container {
+        grid-template-columns: 1fr; /* Change to a single column */
+        margin: 18px; /* Reduce margin */
+    }
+
+    .occasion-card.square, .occasion-card {
+        max-width: 100%; /* Ensure cards take full width of the container */
+        height: auto; /* Let the height adjust based on content */
+    }
+
+    .occasion-image {
+        height: 160px; /* Adjust image height for larger screens */
+    }
+
+    /* Review Section */
+    .review-title {
+        font-size: 1.5rem; /* Adjust font size for iPad Pro */
+        margin-inline-start: 5%; /* Smaller left margin for iPad Pro */
+    }
+
+    .arrow-container {
+        margin-left: auto; /* Align arrows closer to the title */
+        gap: 12px; /* Adjust gap between arrows */
+    }
+
+    .review {
+        flex-direction: column; /* Stack reviews vertically */
+        align-items: center; /* Center-align the reviews */
+    }
+
+    .bot-sect-container {
+        gap: 18px; /* Adjust gap between review cards */
+    }
+
+    .bot-sect {
+        max-width: 320px; /* Adjust card width */
+        padding: 18px; /* Adjust padding */
+    }
+
+        .newsletter-card {
+        width: 100%;
+        margin: -81px auto;
+        display: flex;
+        flex-direction: column;/* Stack the children vertically */
+        align-items: center;
+
+    }
+
+    .newsletter-title {
+        text-align: left !important;
+    }
+
+    .email-form {
+        display: flex;
+        flex-direction: column;/* Stack the children vertically */
+        width: 100%;
+        gap: 10px;/* Add spacing between elements */
+    }
+
+    .email-input {
+        flex: 1;/* Make the input take up remaining space */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    .email-input-wrapper {
+        display: flex !important;
+        align-items: center;/* Align label and input vertically */
+        gap: 10px;/* Space between icon/label and input */
+        width: 100%;
+        margin: auto;
+    }
+
+    .footer-container {
+        display: flex;/* Use flexbox for layout */
+        justify-content: space-between !important;/* Space between left and right sections */
+        align-items: center;/* Align items at the top */
+        gap: 120px;/* Space between the brand-info and footer-links-container */
+        margin-top: 100px !important;
+        margin-left: 0px;
+        flex-direction: row;
+    }
+
+    .brand-info {
+        max-width: 300px !important;
+        /* Limit the width of brand-info */
+        margin-left: -160px !important;
+        /* Ensure it's aligned to the left edge */
+        margin-top: -180px;
+        margin-right: 60px !important;
+        /* Space between brand-info and footer-links-container */
+        flex-shrink: 0px !important;
+        /* Prevent it from shrinking if the container is resized */
+    }
+
+    .footer-links-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);/* Two columns */
+        grid-template-rows: repeat(2, auto);/* Two rows */
+        gap: 20px;/* Space between items */
+        width: 100%;
+        max-width: 800px;/* Adjust as needed */
+        padding: 20px;
+        margin-left: 20px;
+    }
+
+    .alling-copy {
+        display: list-item;
+        justify-content: center !important;
+    }
+
+    .copyright-text {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .payment-icons-wrapper {
+        display: flex;/* Use Flexbox to align items in a row */
+        justify-content: center;
+    }
+
+}

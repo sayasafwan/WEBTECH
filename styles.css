@@ -1,0 +1,1343 @@
+@font-face {
+    font-family: 'Satoshi Variable';
+    src: url('fonts\Satoshi-Variable.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'Crelist';
+    src: url('fonts\Crelist.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'Inter';
+    src: url('fonts\Inter-Variable.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.divider {
+    min-height: 52px;
+    max-width: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.horizontal-divider {
+    margin-top: 39px;
+    width: 358px;
+    max-width: 100%;
+    height: 1px;
+    border: 1px solid #e6e6e6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Gap with a different color */
+.gap {
+    display: grid;
+    padding: 1px 15px;
+    background: #000080;/* Change this color to whatever you like */
+    height: 77px;/* Match the height of the promo banner */
+}
+
+
+/* Promo Banner */
+.promo {
+    display: grid;
+    align-items: end;
+    padding: 1px 5px;
+    background: #000080;
+    color: #fff;
+    font-family: 'Satoshi Variable';
+    height: 35px;
+}
+
+.promo-wrapper {
+    display: flex;
+}
+
+.promo-text {
+    font-size: 11px;
+    text-align: center;
+    flex: 1;
+}
+
+.close-promo {
+    align-items: end;
+    font-size: 16px;
+    padding-right: 60px;
+}
+
+.close-promo ion-icon {
+    color: #fff
+}
+
+/* Navbar */
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-left: 50px;
+}
+
+.brand-name-1 {
+    font-family: 'Crelist';
+    font-size: 30px;
+    color: #000000;
+    font-weight: bolder;
+    margin: auto;
+}
+
+.navbar-wrapper {
+    display: flex;
+    gap: 20px;/* Adds space between items */
+    list-style: none;/* Removes default list styling */
+    margin: 0;/* Removes default margin */
+    padding: 0;/* Removes default padding */
+    justify-content: center;/* Align brand info and footer links side by side */
+    align-items: center;/
+}
+
+.navbar-wrapper li {
+    display: inline-block;/* Ensures each list item stays in the row */
+}
+
+.navbar-wrapper a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navbar-wrapper a:hover {
+    background-color: #000080;
+    text-decoration: underline;
+}
+
+.payment-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;/* Space between icons */
+}
+
+ion-searchbar.custom {
+    --background: #f0f0f0;
+    --color: #000000;
+    --placeholder-color: #000000;
+    --icon-color: #000000;
+    --clear-button-color: #000000;
+    --border-radius: 50px;
+    --height: 40px;
+    width: 700px;
+    padding: 0 10px;
+}
+
+ion-icon.icon {
+    font-size: 24px;
+    color: #000000;
+}
+
+.icons-wrapper {
+    display: flex;
+    gap: 20px;/* Adjust gap between icons */
+}
+
+.icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    color: #000000;
+    font-size: 25px;
+}
+.nav-arrow {
+    width: 15px;/* Adjust width of the SVG */
+    height: 15px;/* Adjust height of the SVG */
+    fill: #000000;/* Set color to black, or adjust to your theme */
+    margin-top: 5px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 10px;/* Space between icons */
+}
+
+.menu-option,
+.search-option {
+    display: none;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+/* Introduction Section */
+.intro-box {
+    text-align: center;
+    background-color: #fff;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between !important;/* Add spacing between children */
+    align-items: center;/* Vertically align content */
+    padding: 16px;/* Add some padding */
+    margin: auto;
+}
+
+.geometry-wrapper {
+    background-color: #ffffff;
+    padding: 24px 16px;
+    width: 50%;/* Adjust width to leave space for the image */
+    text-align: left;/* Ensure text aligns properly */
+}
+
+.intro-title {
+    color: #000000;
+    font-size: 50px;
+    margin-bottom: 16px;
+    line-height: 1.3;
+    font-family: 'Inter';
+    font-weight: 700;
+    text-align: left;
+    width: 450px !important;
+}
+
+.intro-description {
+    color: #000000;
+    font-size: 14px;
+    margin-bottom: 24px;
+    line-height: 1.5;
+    font-family: 'Satoshi Variable';
+    text-align: left;
+}
+
+.shop-now-button {
+    width: 300px;
+    padding: 12px;
+    margin: 16px 0;
+    border: none;
+    background: #000080;
+    color: #ffffff !important;
+    font-size: 16px;
+    border-radius: 62px;
+    font-family: 'Satoshi Variable';
+    display: block;
+    margin-left: 0;
+}
+
+/* Stats Container */
+.stats-container {
+    color: white;
+    display: grid;
+    gap: 24px;
+    padding: 24px 16px;
+    text-align: center;
+    font-family: 'Satoshi Variable';
+}
+
+.first-stat {
+    display: flex;
+    gap: 40px;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stat-number {
+    font-size: 24px;
+    font-weight: bold;
+    color:#000000 ;
+}
+
+.stat-label {
+    font-size: 12px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.logo-image {
+    width: 80%;/* Adjust the width for the image container */
+    display: flex;
+    margin-left: 150px;
+    justify-content: flex-end;/* Align image to the right */
+    align-items: center;/* Vertically center the image */
+}
+
+.logo-image img {
+    max-width: 100%;
+    height: auto;/* Maintain the aspect ratio */
+    object-fit: contain;/* Ensure the image fits within the dimensions */
+}
+
+/* Product Sections */
+.new-arrival,
+.top-selling {
+    padding: 30px 16px;
+}
+
+.new-arrival-text,
+.top-selling-text {
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;/* Reduced the gap */
+}
+
+.product-card {
+    padding: 24px 16px;
+    width: 250px;/* Set a fixed width for all product cards */
+    height: 350px;/* Set a fixed height for all product cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;/* Align content at the top */
+    margin: 0 auto;/* Centers the product cards */
+    border: 1px solid #e6e6e6;/* Adds a border around each product card */
+    border-radius: 13px;/* Optional: Adds rounded corners to the border */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);/* Optional: Adds a subtle shadow for depth */
+}
+
+.first-product,
+.second-product,
+.third-product,
+.fourth-product {
+    padding: 24px 16px;
+    margin-top: 0px;
+    font-family: 'Satoshi Variable';
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;/* Set a fixed height for the product image */
+    object-fit: cover;/* Ensures the image covers the area without stretching */
+    border-radius: 13px;
+    margin-bottom: 12px;/* Space between image and title */
+}
+
+.product-image img {
+    width: 100%;/* Makes the image fill its container */
+    height: auto;/* Maintains aspect ratio */
+    object-fit: cover;/* Ensures the image covers the container without distortion */
+    border-radius: 8px;/* Optional: Adds rounded corners */
+    max-height: 150px;/* Limits the height to avoid oversized images */
+    display: block;/* Ensures proper alignment */
+    margin: 0 auto;/* Centers the image horizontally */
+}
+
+.product-title {
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.rating-text {
+    font-weight: bold;
+}
+
+.black-text {
+    font-weight: normal;
+    color: #666666;
+}
+
+.stars-wrapper {
+    color: #ffc633;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+}
+
+.original-price {
+    color: #666;
+    margin-left: 8px;
+    padding-right: 5px;
+}
+
+.discount-badge {
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 4px;
+    font-size: 12px;
+    color: red;
+    background-color: #ffebeb;
+    border-radius: 62px;
+}
+
+.view-all-button {
+    width: 150px;
+    padding: 12px;
+    margin: 16px auto;/* Centers the button horizontally */
+    border: 1px solid #e6e6e6;
+    background: transparent;
+    border-radius: 62px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;/* Centers the content inside the button */
+    align-items: center;/* Vertically centers the content */
+}
+
+/* New Arrivals and Top Selling product scroll container */
+.product-scroll-container {
+    display: flex;
+    justify-content: center;/* Centers the container horizontally */
+    overflow-x: auto;/* Enables horizontal scrolling */
+    gap: 20px;/* Adds space between product cards */
+    padding: 10px 0;/* Adds padding for better visibility */
+}
+
+.product-card {
+    flex: 0 0 auto;/* Prevents the cards from stretching */
+    margin-right: 20px;/* Adds space between cards */
+}
+
+/* Optional: Style the scrollbar to be more user-friendly */
+.product-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.product-scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.product-scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+/* Browse By Section */
+.browse-by {
+    padding: 24px 16px;
+}
+
+.browse-box {
+    padding: 24px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 1000px;
+    text-align: center;/* Horizontally center the content */
+    margin: 0 auto;/* Center the box itself within the parent container */
+}
+
+.browse-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+/* Container for the occasion cards */
+.occasion-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);/* Two equal-width columns */
+    grid-template-rows: auto auto;/* Two rows */
+    gap: 16px;/* Space between the cards */
+    margin: 60px;
+}
+
+/* Square card */
+.occasion-card.square {
+    width: 100%;
+    height: 260px;/* Square size */
+    max-width: 400px;/* Max width for square card */
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 16px 24px 114px;
+    text-align: left;
+    font-family: 'Satoshi Variable';
+    font-size: 24px;
+    font-weight: bold;
+    grid-column: 1;/* Place the square card in the first column */
+    grid-row: span 1;/* Span one row */
+}
+
+/* Rectangular card */
+.occasion-card {
+    width: 100%;
+    height: 260px;/* Rectangular size */
+    max-width: 600px;/* Max width for rectangular card */
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 16px 24px 114px;
+    text-align: left;
+    font-family: 'Satoshi Variable';
+    font-size: 24px;
+    font-weight: bold;
+    grid-column: 2;/* Place the rectangular card in the second column */
+    grid-row: span 1;/* Span one row */
+}
+
+.occasion-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;/* Ensures the image fully covers the container without stretching */
+    border-radius: 13px;/* Optional: adds rounded corners to the image */
+    
+}
+
+/* Review Section */
+.review-sect {
+    padding: 24px 16px;
+}
+
+.top-sect {
+    display: flex;
+    align-items: center;/* Align title and arrows in the same line */
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.review-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 200px;
+}
+
+.arrow-container {
+    display: flex;
+    gap: 17px;
+    margin-left: 600px;
+}
+
+.arrow {
+    font-size: 32px;/* Make the arrows the same size as the title */
+    color: #666;
+    cursor: pointer;
+}
+
+.review {
+    margin: auto;
+    display: flex;
+    justify-content: center;/* Center the reviews */
+    overflow: hidden;/* Hide overflowing content */
+    position: relative;
+    width: 100%;/* Full width of the container */
+}
+
+/* Bot Sect Container */
+.bot-sect-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+/* Blur effect before and after the comments */
+.bot-sect-container::before,
+.bot-sect-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bot-sect-container::before {
+    left: 0;
+    transform: rotateY(180deg);
+}
+
+.bot-sect-container::after {
+    right: 0;
+}
+
+/* Individual Comment Container */
+.bot-sect {
+    border-radius: 20px;
+    display: flex;
+    max-width: 358px;
+    flex: 1;/* Ensures the comment containers take equal width */
+    padding: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;/* Smooth transition for animations */
+    opacity: 0.7;
+}
+
+.bot-sect:nth-child(1),
+.bot-sect:nth-child(5) {
+    opacity: 0.4;/* Further reduce opacity for side reviews */
+    filter: blur(4px);/* Apply blur effect */
+    transform: scale(0.9);/* Slightly shrink side reviews */
+}
+
+
+
+/* Centered Review Card */
+.bot-sect:nth-child(3),.bot-sect:nth-child(2),
+.bot-sect:nth-child(4) {
+    opacity: 1;
+    filter: none;
+    transform: scale(1);/* Keep the center review normal */
+}
+
+
+
+/* Review Card Elements */
+.review-card {
+    flex: 0 0 auto;
+    width: 300px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stars-container {
+   margin-bottom: 10px;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.customer-name {
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Satoshi Variable';
+    font-weight: bold;
+}
+
+.verification-badge {
+    margin-top: 3.3px;
+    color: #01ab31;
+}
+
+.review-text {
+    font-family: 'Satoshi Variable';
+    font-size: 12px;
+    line-height: 1.5;
+}
+/* Footer section */
+.bottom-container {
+    border-radius: 0;
+    display: flex;
+    max-width: 2000px;
+    width: 100%;
+    padding-top: 81px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+  
+.bottom-wrapper {
+    background-color: rgba(240, 240, 240, 1);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 15px 23px;
+}
+  
+.newsletter-card {
+    border-radius: 20px;
+    background-color: #000080;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:-81px auto ;/* Center the container horizontally */
+    margin-bottom: 10px;
+    width: 1000px;/* Fixed width */
+    overflow: hidden;
+    padding: 30px 24px;
+    font: 700 14px Satoshi Variable, -apple-system, Roboto, Helvetica, sans-serif;
+    gap: 16px;
+}
+
+.newsletter-title {
+    color: #fff;
+    font: 32px 'Inter';
+    font-weight: bold;
+    text-align: left;/* Align text to the left */
+    flex: 1;/* Allow text to take up more space */
+}
+
+.email-input-wrapper {
+    border-radius: 62px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;/* Center align items */
+    gap: 12px;
+    overflow: hidden;
+    padding: 11px 16px;
+    flex: none;/* Prevent it from stretching */
+    min-width: 200px;/* Set a minimum width for consistency */
+}
+
+.email-input {
+    border-color: transparent;
+    font-family: 'Satoshi Variable';
+    font-size: 14px;
+    width: 200px;
+}
+
+.email-icon {
+    object-fit: contain;
+    object-position: center;
+    font-size: 20px;
+    color: #999999;
+    align-self: stretch;
+    margin: auto 0;
+}
+
+.subscribe-button {
+    border-radius: 62px;
+    background-color: #fff;
+    width: 100%;/* Match the width of the email input */
+    height: 42px;/* Match the height of the email input */
+    margin-top: 10px;/* Add a small gap between input and button */
+    color: #000000;
+    padding: 0 16px;/* Align padding with email input */
+    border: none;
+    cursor: pointer;
+    font-family: 'Satoshi Variable';
+    font-weight: bold;
+    display: block;
+}
+.email-form {
+    gap: 30px;/* Adds spacing between the email input and the subscribe button */
+}
+
+.brand-name {
+    color: #000000;;
+    margin-top: 32px;
+    font: 400 29px Crelist, sans-serif;
+    margin-left: 200px;
+}
+  
+.brand-description {
+    color: #000000;
+    margin-top: 13px;
+    margin-left: 200px;
+    font: 400 14px/22px Satoshi Variable, -apple-system, Roboto, Helvetica, sans-serif;
+}
+  
+.social-media-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 28px;
+    margin-top: 16px;
+    font-size: 20px;
+    color: #000000;
+}
+
+.social-media-container {
+    margin-left: 200px;
+    display: flex;
+    gap: 5px;/* Adds 5px gap between icons */
+}
+  
+.footer-container {
+    display: flex;
+    justify-content: space-between;/* Align brand info and footer links side by side */
+    align-items: flex-start;/* Align items to the top */
+    padding: 20px;/* Optional padding for spacing */
+    gap: 40px;/* Space between brand info and footer links */
+}
+
+.brand-info {
+    flex: 1;/* Make the brand section take up more space */
+}
+
+.brand-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;/* Add space between brand name and description */
+}
+
+.brand-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;/* Add space between description and social media */
+}
+
+.social-media-container {
+    display: flex;
+    gap: 10px;/* Space between social media icons */
+    margin-top: 16px;/* Space above the icons */
+}
+
+.social-media-icon {
+    font-size: 20px;
+    color: #bd8a41;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;/* Align brand info and footer links side by side */
+    align-items: flex-start;/* Align items to the top */
+    padding: 20px;/* Optional padding for spacing */
+    gap: 40px;/* Space between brand info and footer links */
+}
+
+.brand-info {
+    flex: 1;/* Make the brand section take up more space */
+}
+
+.brand-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;/* Add space between brand name and description */
+}
+
+.brand-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;/* Add space between description and social media */
+}
+
+.social-media-container {
+    display: flex;
+    gap: 10px;/* Space between social media icons */
+    margin-top: 16px;/* Space above the icons */
+}
+
+.social-media-icon {
+    font-size: 20px;
+    color: #000000;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;/* Align brand info and footer links side by side */
+    align-items: flex-start;/* Align items to the top */
+    padding: 20px;/* Optional padding for spacing */
+    gap: 40px; /* Space between brand info and footer links */
+}
+
+.brand-info {
+    flex: 1;/* Make the brand section take up more space */
+}
+
+.brand-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;/* Add space between brand name and description */
+}
+
+.brand-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px; /* Add space between description and social media */
+}
+
+.footer-links-container {
+    display: flex;
+    gap: 40px;/* Space between footer menus */
+    flex: 3;/* Make the footer section take more space than the brand section */
+    flex-wrap: wrap;/* Allows the footer menus to wrap onto the next row if space is tight */
+}
+
+.footer-menu {
+    flex: 1;/* Allow each footer menu to take equal space */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu-title {
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 8px;/* Space between title and links */
+}
+
+.footer-menu-links {
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+  
+.alling-copy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright-text {
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    margin-top: 0px;
+    font: 400 14px Satoshi Variable, -apple-system, Roboto, Helvetica, sans-serif;
+}
+  
+.payment-icons-wrapper {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+  
+.payment-icon {
+    object-fit: contain;
+    width: 50px;
+    fill: var(--Neutral-Colors-White, #fff);
+    stroke-width: 0.192px;
+    stroke: var(--Neutral-Colors-400, #d6dce5);
+    filter: drop-shadow(0px 0.384px 3.842px rgba(183, 183, 183, 0.08))
+      drop-shadow(0px 3.842px 7.684px rgba(183, 183, 183, 0.08));
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    color: #999999;
+    border-color: transparent;
+}
+
+/* Utility Classes */
+.divider {
+    display: none;
+}
+
+a {
+    color: black;/* Sets the link text color to black */
+    text-decoration: none;/* Removes the underline */
+}
+
+a:hover {
+    color: black;/* Ensures the color stays black on hover */
+    text-decoration: underline;/* Optional: Adds underline on hover for better accessibility */
+}
+
+
+/* Responsive for iPad */
+@media (min-width: 820px) and (max-width: 1000px) {
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100% !important;
+    }
+
+    .menu-option{
+        display: flex !important;
+        font-size: 48px;
+        cursor: pointer; 
+        color: #000000;
+    } 
+
+    ul {
+        display: none;
+    }
+
+    .search-container {
+        width: 100%;/* Make the search container take up the full width */
+        max-width: 320px;/* Set a maximum width for the search bar */
+    }
+
+    ion-searchbar.custom {
+        --background: #f0f0f0;
+        --color: #000000;
+        --placeholder-color: #000000;
+        --icon-color: #000000;
+        --clear-button-color: #000000;
+        --border-radius: 50px;
+        --height: 40px;
+        width: 320px;
+        padding: 0 10px;
+    }
+
+    .payment-icons {
+        width: 400px !important;
+        background-color: #ffffff !important;
+    }
+
+    /* Introduction Section */
+    .intro-box {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .geometry-wrapper {
+        width: 55%; 
+        padding: 18px;
+    }
+
+    .intro-title {
+        font-size: 38px; 
+        width: 100% !important; 
+        text-align: left;
+    }
+
+    .intro-description {
+        font-size: 16px; 
+        text-align: left;
+    }
+
+    .shop-now-button {
+        width: 85%; 
+        margin: 18px auto; 
+    }
+
+    .logo-image {
+        width: 100%; 
+        max-width: 350px;
+        margin-left: 12px; 
+        justify-content: center;
+    }
+
+    /* Product Sections */
+    .new-arrival,
+    .top-selling {
+        padding: 22px 16px; 
+    }
+
+    .new-arrival-text,
+    .top-selling-text {
+        font-size: 30px; 
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .product-card {
+        width: 240px; 
+        height: auto; 
+        margin-bottom: 18px;
+    }
+
+    .product-image {
+        height: 200px; 
+        margin-bottom: 12px;
+    }
+
+    .product-title {
+        font-size: 15px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .view-all-button {
+        width: 140px; 
+        padding: 12px;
+    }
+
+    /* Product Scroll Container */
+    .product-scroll-container {
+        gap: 18px; 
+        padding: 10px 0; 
+    }
+
+    .product-card {
+        margin-right: 18px; 
+        width: 220px;
+    }
+
+    /* Browse By Section */
+    .browse-box {
+        padding: 0px;
+        width: 88%; /* Make the box take up 88% of the screen width */
+    }
+
+    .browse-title {
+        font-size: 30px; /* Slightly reduce the title size */
+    }
+
+    .occasion-cards-container {
+        grid-template-columns: 1fr; /* Change to a single column */
+        margin: 18px; /* Reduce margin */
+    }
+
+    .occasion-card.square, .occasion-card {
+        max-width: 100%; /* Ensure cards take full width of the container */
+        height: 300px; /* Let the height adjust based on content */
+    }
+
+    .occasion-image {
+        width: 100%;
+        height: 200px;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+
+    /* Review Section */
+    .review-title {
+        font-size: 1.5rem; /* Adjust font size for iPad Pro */
+        margin-inline-start: 5%; /* Smaller left margin for iPad Pro */
+    }
+
+    .arrow-container {
+        margin-left: auto; /* Align arrows closer to the title */
+        gap: 12px; /* Adjust gap between arrows */
+    }
+
+    .review {
+        flex-direction: column; /* Stack reviews vertically */
+        align-items: center; /* Center-align the reviews */
+    }
+
+    .bot-sect-container {
+        gap: 18px; /* Adjust gap between review cards */
+    }
+
+    .bot-sect {
+        max-width: 320px; /* Adjust card width */
+        padding: 18px; /* Adjust padding */
+    }
+
+    .newsletter-card {
+        width: 100%;
+        margin: -81px auto;
+        display: flex;
+        flex-direction: column;/* Stack the children vertically */
+        align-items: center;
+
+    }
+
+    .newsletter-title {
+        text-align: left !important;
+    }
+
+    .email-form {
+        display: flex;
+        flex-direction: column;/* Stack the children vertically */
+        width: 100%;
+        gap: 10px;/* Add spacing between elements */
+    }
+
+    .email-input {
+        flex: 1;/* Make the input take up remaining space */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    .email-input-wrapper {
+        display: flex !important;
+        align-items: center;/* Align label and input vertically */
+        gap: 10px;/* Space between icon/label and input */
+        width: 100%;
+        margin: auto;
+    }
+
+    .footer-container {
+        display: flex;/* Use flexbox for layout */
+        justify-content: space-between !important;/* Space between left and right sections */
+        align-items: center;/* Align items at the top */
+        gap: 120px;/* Space between the brand-info and footer-links-container */
+        margin-top: 100px !important;
+        margin-left: 0px;
+        flex-direction: row;
+    }
+
+    .brand-info {
+        max-width: 300px !important;/* Limit the width of brand-info */
+        margin-left: -160px !important;/* Ensure it's aligned to the left edge */
+        margin-top: -180px;
+        margin-right: 60px !important;/* Space between brand-info and footer-links-container */
+        flex-shrink: 0px !important;/* Prevent it from shrinking if the container is resized */
+    }
+
+    .footer-links-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);/* Two columns */
+        grid-template-rows: repeat(2, auto);/* Two rows */
+        gap: 20px;/* Space between items */
+        width: 100%;
+        max-width: 800px;/* Adjust as needed */
+        padding: 20px;
+        margin-left: 20px;
+    }
+
+    .alling-copy {
+        display: list-item;
+        justify-content: center !important;
+    }
+
+    .copyright-text {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .payment-icons-wrapper {
+        display: flex;/* Use Flexbox to align items in a row */
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 391px) {
+
+    .promo {
+        width: 100%;
+    }
+
+    .promo-text {
+        text-align: center;
+        margin-left: 50px !important;
+    }
+
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 390px !important;
+        /* Full width on smaller screens */
+        margin-left: 0px;
+    }
+
+    .brand-name-1 {
+        font-size: 25px;
+        gap: 20px;
+    }
+
+    .menu-option {
+        display: flex;
+        font-size: 36px;
+        /* Smaller font size for mobile */
+        cursor: pointer;
+    }
+
+    .search-option {
+        display: flex;
+        font-family: "Font Awesome 6 Free", "Arial", sans-serif;
+        font-size: 36px;
+        color: #000000;
+        transition: transform 0.3s ease;
+        margin-left: 20px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .search-container {
+        max-width: 40px !important;/* Adjust for smaller screens */
+    }
+
+    ion-searchbar.custom {
+        --background: #f0f0f0;
+        --color: #000000;
+        --placeholder-color: #000000;
+        --icon-color: #000000;
+        --clear-button-color: #000000;
+        --border-radius: 50px;
+        --height: 40px;
+        width: 5px !important;
+        display: none !important;
+    }
+
+    .icon-container {
+        gap: 0px !important;
+    }
+
+    .icon {
+        gap: 0px !important;
+        font-size: 20px !important;
+    }
+
+    .newsletter-card {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;/* Stack the children vertically */
+        align-items: center;
+    }
+
+    .newsletter-title {
+        text-align: left !important;/* Center the title */
+    }
+
+    .email-form {
+        display: flex;
+        flex-direction: column;/* Stack the children vertically */
+        width: 100%;
+        gap: 10px;/* Add spacing between elements */
+    }
+
+    .email-input {
+        flex: 1;/* Make the input take up remaining space */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    .email-input-wrapper {
+        display: flex !important;
+        align-items: center;/* Align label and input vertically */
+        gap: 10px;/* Space between icon/label and input */
+        width: 100%;
+        margin: auto;
+    }    
+
+    .footer-container {
+        display: flex;/* Use flexbox for layout */
+        justify-content: space-between !important;/* Space between left and right sections */
+        align-items: center;/* Align items at the top */
+        gap: 60px;/* Adjust space between brand-info and footer-links-container */
+        margin-top: 50px !important;
+        margin-left: 0px;
+        flex-direction: column;/* Stack the sections vertically on small screens */
+    }
+
+    .brand-info {
+        max-width: 100% !important;/* Adjust width for smaller screens */
+        margin-left: -420px !important;/* Remove margin */
+        margin-top: -60px;
+        margin-right: 0px !important;
+        flex-shrink: 0px !important;/* Prevent it from shrinking */
+    }
+
+    .footer-links-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);/* One column for mobile */
+        grid-template-rows: repeat(2, auto);
+        gap: 15px;/* Adjust space between items */
+        width: 100%;
+        padding: 10px;
+        margin-left: -40px;
+        margin-top: -40px;
+    }
+
+    .alling-copy {
+        display: list-item;
+        justify-content: center !important;
+    }
+
+    .copyright-text {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .payment-icons-wrapper {
+        display: flex;
+        /* Use Flexbox to align items in a row */
+        justify-content: center;
+    }
+
+}

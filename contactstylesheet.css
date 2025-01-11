@@ -1,0 +1,895 @@
+@font-face {
+    font-family: 'Satoshi Variable';
+    src: url('fonts\Satoshi-Variable.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'Crelist';
+    src: url('fonts\Crelist.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'Inter';
+    src: url('fonts\Inter-Variable.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.divider {
+    min-height: 52px;
+    max-width: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.horizontal-divider {
+    margin-top: 39px;
+    width: 358px;
+    max-width: 100%;
+    height: 1px;
+    border: 1px solid #e6e6e6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gap with a different color */
+.gap {
+    display: grid;
+    padding: 1px 15px;
+    background: #000080;/* Change this color to whatever you like */
+    height: 77px;/* Match the height of the promo banner */
+}
+
+
+/* Promo Banner */
+.promo {
+    display: grid;
+    align-items: end;
+    padding: 1px 5px;
+    background: #000080;
+    color: #fff;
+    font-family: 'Satoshi Variable';
+    height: 35px;
+}
+
+.promo-wrapper {
+    display: flex;
+}
+
+.promo-text {
+    font-size: 11px;
+    text-align: center;
+    flex: 1;
+}
+
+.close-promo {
+    align-items: end;
+    font-size: 16px;
+    padding-right: 60px;
+}
+
+.close-promo ion-icon {
+    color:#fff
+}
+
+/* Navbar */
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-left: 50px ;
+}
+
+.brand-name-1{
+    font-family: 'Crelist';
+    font-size: 30px;
+    color: #000000;
+    font-weight: bolder;
+    margin: auto;
+}
+
+.navbar-wrapper {
+    display: flex;
+    gap: 20px;/* Adds space between items */
+    list-style: none;/* Removes default list styling */
+    margin: 0;/* Removes default margin */
+    padding: 0;/* Removes default padding */
+    justify-content: center;/* Align brand info and footer links side by side */
+    align-items: center;/
+}
+
+.navbar-wrapper li {
+    display: inline-block;/* Ensures each list item stays in the row */
+}
+
+.navbar-wrapper a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navbar-wrapper a:hover {
+    background-color: #000080;
+    text-decoration: underline;
+}
+
+.payment-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;/* Space between icons */
+}
+
+ion-searchbar.custom {
+    --background: #f0f0f0;
+    --color: #000000;
+    --placeholder-color: #000000;
+    --icon-color: #000000;
+    --clear-button-color: #000000;
+    --border-radius: 50px;
+    --height: 40px;
+    width: 700px;
+    padding: 0 10px;
+}
+
+ion-icon.icon {
+    font-size: 24px;
+    color: #000000;
+}
+
+.icons-wrapper {
+    display: flex;
+    gap: 20px;/* Adjust gap between icons */
+}
+
+.icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    color: #000000;
+    font-size: 25px;
+}
+.nav-arrow {
+    width: 15px;/* Adjust width of the SVG */
+    height: 15px;/* Adjust height of the SVG */
+    fill: #000000;/* Set color to black, or adjust to your theme */
+    margin-top: 5px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 10px;
+    /* Space between icons */
+}
+
+#menu{
+    margin-left: 110px;
+    font-family: 'Satoshi Variable';
+}
+#contact-name{
+    font-family: 'Inter';
+    font-size: 25px;
+    color: #000000;
+    margin-left: 110px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    border : 1px solid #333333;
+}
+.contact-info{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #000080;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);/* Adds subtle shadow */
+}
+.contact-info *{
+    margin-left: 15px;
+}
+#cont-info{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    
+}
+#cont-desc {
+    font-family: 'Satoshi Variable', sans-serif;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    height: 80px;
+}
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    
+    height: 60px;
+}
+.contact-info-item ion-icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact-info-item span{
+    color: #ffffff;  
+}
+.social-media-icon1 {
+    width: 28px;
+    height: 28px;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.social-media-container1{
+    margin-top: 150px;
+}
+
+.social-media-icon1:hover {
+    color: #00aced;/* Highlight color for hover effect */
+}
+.contact-form {
+    flex: 2;
+    padding: 30px;
+    width: 700px;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+.radio-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+button.send-btn {
+    padding: 12px;
+    background-color: #000080;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    width: 200px;
+    margin-top: 25px;
+    margin-left: 400px;
+}
+
+button.send-btn:hover {
+    background-color: #000080;
+}
+/* Footer section */
+.bottom-container {
+    border-radius: 0;
+    display: flex;
+    max-width: 2000px;
+    width: 100%;
+    padding-top: 81px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.bottom-wrapper {
+    background-color: rgba(240, 240, 240, 1);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 15px 23px;
+}
+
+.brand-name {
+    color: #000000;
+    margin-top: 32px;
+    font: 400 29px Crelist, sans-serif;
+    margin-left: 200px;
+}
+
+.brand-description {
+    color: #000000;
+    margin-top: 13px;
+    margin-left: 200px;
+    font: 400 14px/22px Satoshi Variable, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.social-media-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 28px;
+    margin-top: 16px;
+    font-size: 20px;
+    color: #000000;
+}
+
+.social-media-container {
+    margin-left: 200px;
+    display: flex;
+    gap: 5px;/* Adds 5px gap between icons */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;/* Align brand info and footer links side by side */
+    align-items: center;/* Align items to the top */
+    padding: 20px;/* Optional padding for spacing */
+    gap: 40px;/* Space between brand info and footer links */
+    margin-top: 30px;
+}
+
+.brand-info {
+    flex: 1;/* Make the brand section take up more space */
+}
+
+.brand-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;/* Add space between brand name and description */
+}
+
+.brand-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;/* Add space between description and social media */
+}
+
+.social-media-container {
+    display: flex;
+    gap: 10px;/* Space between social media icons */
+    margin-top: 16px;/* Space above the icons */
+}
+
+.social-media-icon {
+    font-size: 20px;
+    color: #bd8a41;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;/* Align brand info and footer links side by side */
+    align-items: flex-start;/* Align items to the top */
+    padding: 20px;/* Optional padding for spacing */
+    gap: 40px;/* Space between brand info and footer links */
+}
+
+.brand-info {
+    flex: 1;/* Make the brand section take up more space */
+}
+
+.brand-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;/* Add space between brand name and description */
+}
+
+.brand-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;/* Add space between description and social media */
+}
+
+.social-media-container {
+    display: flex;
+    gap: 10px;/* Space between social media icons */
+    margin-top: 16px;/* Space above the icons */
+}
+
+.social-media-icon {
+    font-size: 20px;
+    color: #000000;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;/* Align brand info and footer links side by side */
+    align-items: flex-start;/* Align items to the top */
+    padding: 20px; /* Optional padding for spacing */
+    gap: 40px;/* Space between brand info and footer links */
+}
+
+.brand-info {
+    margin-left: -100px;
+    margin-top: -40px;
+}
+
+.brand-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;/* Add space between brand name and description */
+}
+
+.brand-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;/* Add space between description and social media */
+}
+
+.footer-links-container {
+    display: flex;
+    gap: 40px;/* Space between footer menus */
+    flex: 3;/* Make the footer section take more space than the brand section */
+    flex-wrap: wrap;/* Allows the footer menus to wrap onto the next row if space is tight */
+}
+
+.footer-menu {
+    flex: 1;/* Allow each footer menu to take equal space */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu-title {
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 8px;/* Space between title and links */
+}
+
+.footer-menu-links {
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.alling-copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright-text {
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    margin-top: 0px;
+    font: 400 14px Satoshi Variable, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.payment-icons-wrapper {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
+.payment-icon {
+    object-fit: contain;
+    width: 50px;
+    fill: var(--Neutral-Colors-White, #fff);
+    stroke-width: 0.192px;
+    stroke: var(--Neutral-Colors-400, #d6dce5);
+    filter: drop-shadow(0px 0.384px 3.842px rgba(183, 183, 183, 0.08)) drop-shadow(0px 3.842px 7.684px rgba(183, 183, 183, 0.08));
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    color: #999999;
+    border-color: transparent;
+}
+
+/* Utility Classes */
+.divider {
+    display: none;
+}
+
+a {
+    color: black !important;/* Sets the link text color to black */
+    text-decoration: none;/* Removes the underline */
+}
+
+a:hover {
+    color: black;/* Ensures the color stays black on hover */
+    text-decoration: underline;/* Optional: Adds underline on hover for better accessibility */
+}
+
+.menu-option,.search-option{
+    display: none;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+
+/* Media Queries for iPad (820px) */
+@media (min-width: 820px) and (max-width: 1000px) {
+
+    .navbar-container {
+       flex-direction: column;
+       align-items: flex-start;
+       width: 820px !important;
+    }
+
+    .menu-option{
+    display: flex;
+    font-size: 48px;
+    cursor: pointer; 
+    }   
+
+    ul{
+        display: none;
+    }
+
+    .search-container{
+        width: 100%; /* Make the search container take up the full width */
+        max-width: 320px; /* Set a maximum width for the search bar */
+    }
+
+    ion-searchbar.custom {
+    --background: #f0f0f0;
+    --color: #000000;
+    --placeholder-color: #000000;
+    --icon-color: #000000;
+    --clear-button-color: #000000;
+    --border-radius: 50px;
+    --height: 40px;
+    width: 320px;
+    padding: 0 10px;
+    }
+
+    .payment-icons{
+        width: 400px !important;
+        background-color: #ffffff !important;
+    }
+
+    #menu,#contact-name{
+        margin-left: 60px;
+        margin-bottom: 10px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        width: 700px !important;
+        height: auto;
+        margin: auto;
+    }
+
+    .contact-info {
+        width: 700px;
+        margin-bottom: 20px;
+    }
+
+    .shop-info{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        text-align: center !important;
+    }
+
+    .contact-info-item span{
+        font-size: 10px !important;
+    }
+
+    .social-media-container1{
+        display: none;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);/* Two columns */
+        gap: 20px;/* Space between the fields */
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group label {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-group input {
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+    }
+
+    button.send-btn {
+        padding: 10px 15px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-left: 0px;
+    }
+
+    button.send-btn:hover {
+        background-color: #0056b3;
+    }
+
+    .footer-container {
+        display: flex;/* Use flexbox for layout */
+        justify-content: space-between !important;/* Space between left and right sections */
+        align-items: center;/* Align items at the top */
+        gap: 120px;/* Space between the brand-info and footer-links-container */
+        margin-top: 20px !important;
+        margin-left: 0px;
+        flex-direction: row;
+    }
+
+    .brand-info {
+        max-width: 300px !important;/* Limit the width of brand-info */
+        margin-left: -160px!important;/* Ensure it's aligned to the left edge */
+        margin-right: 60px;
+        margin-top: -180px !important;
+        flex-shrink: 0px !important;/* Prevent it from shrinking if the container is resized */
+    }
+
+    .footer-links-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);/* Two columns */
+        grid-template-rows: repeat(2, auto);/* Two rows */
+        gap: 20px;/* Space between items */
+        width: 100%;
+        max-width: 800px;/* Adjust as needed */
+        padding: 20px;
+        margin-left: 20px;
+    }
+
+    .alling-copy{
+        display: list-item;
+        justify-content: center !important;
+    }
+
+    .copyright-text {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .payment-icons-wrapper{
+        display: flex;/* Use Flexbox to align items in a row */
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 391px) {
+
+    .promo {
+        width: 100%;
+    }
+
+    .promo-text {
+        text-align: center;
+        margin-left: 50px !important;
+    }
+
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 390px !important;/* Full width on smaller screens */
+        margin-left: 0px;
+    }
+
+    .brand-name-1 {
+        font-size: 25px;
+        gap: 20px;
+    }
+
+    .menu-option {
+        display: flex;
+        font-size: 36px;/* Smaller font size for mobile */
+        cursor: pointer;
+    }
+
+    .search-option {
+        display: flex;
+        font-family: "Font Awesome 6 Free", "Arial", sans-serif;
+        font-size: 36px;
+        color: #000000;
+        transition: transform 0.3s ease;
+        margin-left: 20px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .search-container {
+        max-width: 40px !important;
+        /* Adjust for smaller screens */
+    }
+
+    ion-searchbar.custom {
+        --background: #f0f0f0;
+        --color: #000000;
+        --placeholder-color: #000000;
+        --icon-color: #000000;
+        --clear-button-color: #000000;
+        --border-radius: 50px;
+        --height: 40px;
+        width: 5px !important;
+        display: none !important;
+    }
+
+    .icon-container {
+        gap: 0px !important;
+    }
+
+    .icon {
+        gap: 0px !important;
+        font-size: 20px !important;
+    }
+
+    #menu,#contact-name{
+        margin-left: 20px !important;
+    }
+
+    .contact-container{
+        margin-top: 10px;
+        border: none;
+        width: 350px;
+        display: list-item;
+        gap: 20px !important;
+        height: auto !important;
+    }
+
+    .contact-info{
+        width: 350px;
+        margin-left: -5px;
+    }
+
+    #cont-info,#cont-desc{
+        justify-content: center;
+        text-align: center;
+        margin-left: -10px;
+    }
+
+    .social-media-container1{
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        margin-left: -50px !important;
+    }
+
+    .contact-form{
+        width: 370px;
+        margin-left: -20px;
+    }
+
+    .form-row{
+        display: list-item;
+        list-style: none;
+    }
+
+    .footer-container {
+        display: flex;/* Use flexbox for layout */
+        justify-content: space-between !important;/* Space between left and right sections */
+        align-items: center;/* Align items at the top */
+        gap: 60px;/* Adjust space between brand-info and footer-links-container */
+        margin-top: 50px !important;
+        margin-left: 0px;
+        flex-direction: column;/* Stack the sections vertically on small screens */
+    }
+
+    .brand-info {
+        max-width: 100% !important;/* Adjust width for smaller screens */
+        margin-left: -420px !important;/* Remove margin */
+        margin-top: -60px;
+        margin-right: 0px !important;
+        flex-shrink: 0px !important;/* Prevent it from shrinking */
+    }
+
+    .footer-links-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);/* One column for mobile */
+        grid-template-rows: repeat(2, auto);
+        gap: 15px;/* Adjust space between items */
+        width: 100%;
+        padding: 10px;
+        margin-left: -40px;
+        margin-top: -40px;
+    }
+
+    .alling-copy {
+        display: list-item;
+        justify-content: center !important;
+    }
+
+    .copyright-text {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .payment-icons-wrapper {
+        display: flex;/* Use Flexbox to align items in a row */
+        justify-content: center;
+    }
+
+}

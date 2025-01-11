@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LETSHOP.CO</title>
+    <link rel="stylesheet" href="contactstylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@6.3.7/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@6.3.7/dist/ionic/ionic.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Promo Banner -->
+    <div class="promo">
+        <div class="promo-wrapper">
+            <div class="promo-text">
+                <span class="first-part">Sign up and get 20% off your first order.</span>
+                <span class="second-part" style="text-decoration: underline;" id="signup-link">Sign up now</span>
+            </div>
+            <div class="close-promo">
+                <ion-icon name="close"></ion-icon>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar-container">
+        <div class="navbar-wrapper">
+            <div class="menu-option">&#8801;</div>
+            <div class="brand-name-1">LETSHOP.CO</div>
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <svg class="nav-arrow"  xmlns="http://www.w3.org/2000/svg"viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                </svg>
+                <li><a href="#">On Sale</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brands</a></li>
+            </ul>
+            <div class="payment-icons">
+                <div class="search-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="search-option bi bi-search"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                    <ion-searchbar show-cancel-button="focus" class="custom"></ion-searchbar>        
+                </div>
+                <div class="icon-container">
+                    <!-- Cart Icon -->
+                    <a href="cart.html" aria-label="Go to Cart">
+                        <ion-icon class="icon" name="cart-outline"></ion-icon>
+                    </a>
+                    <!-- Profile Icon -->
+                    <a href="#" aria-label="Go to Profile">
+                        <ion-icon class="icon" name="person-circle-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <p id="menu">Home > Contact Us</p>
+
+    <!-- Contact Section -->
+    <h2 id="contact-name">CONTACT US</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h4 id="cont-info">Contact Information</h4>
+            <p id="cont-desc">Say something to start a live chat!</p>
+            <div class="shop-info">
+             <div class="contact-info-item">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>+03 8000 8000</span>
+            </div>
+            <div class="contact-info-item">
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>letshopco@gmail.com</span>
+            </div>
+            <div class="contact-info-item">
+                <ion-icon name="location-outline"></ion-icon>
+                <span>Lot 8, Jln Gombak Utara, 53100 Kuala Lumpur</span>
+            </div>
+            <div class="social-media-container1">
+                <ion-icon class="social-media-icon1" name="logo-twitter"></ion-icon>
+                <ion-icon class="social-media-icon1" name="logo-instagram"></ion-icon>
+            </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number" placeholder="Phone Number (no  '-' )" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Select Subject</label>
+                    <div class="radio-options">
+                        <label><input type="radio" name="subject" value="General Inquiry"> General <br> Inquiry</label>
+                        <label><input type="radio" name="subject" value="Returns & Refunds"> Returns &<br> Refunds</label>
+                        <label><input type="radio" name="subject" value="Orders & Shipping"> Orders &<br> Shipping</label>
+                        <label><input type="radio" name="subject" value="Feedback/Suggestions"> Feedback/<br>
+                            Suggestions</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+                </div>
+                <button type="submit" class="send-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer section-->
+    <div class="bottom-container">
+        <div class="bottom-wrapper">
+            <div class="footer-container">
+                <div class="brand-info">
+                    <h1 class="brand-name">LETSHOP.CO</h1>
+                    <p class="brand-description">We have clothes that suits your <br> style and which you’re proud to <br>
+                        wear. From women to men.</p>
+                    <div class="social-media-container">
+                        <ion-icon class="social-media-icon" name="logo-twitter"></ion-icon>
+                        <ion-icon class="social-media-icon" name="logo-facebook"></ion-icon>
+                        <ion-icon class="social-media-icon" name="logo-instagram"></ion-icon>
+                    </div>
+                </div>
+                
+            <div class="footer-links-container">
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">Company</h3>
+                    <nav class="footer-menu-links">
+                        <a>About</a><br /><br />
+                        <a>Features</a><br /><br />
+                        <a>Works</a><br /><br />
+                        <a>Career</a>
+                    </nav>
+                </div>
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">FAQ</h3>
+                    <nav class="footer-menu-links">
+                        <a>Account</a><br /><br />
+                        <a>Manage Deliveries</a><br /><br />
+                        <a>Orders</a><br /><br />
+                        <a>Payment</a>
+                    </nav>
+                </div>
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">HELP</h3>
+                    <nav class="footer-menu-links">
+                        <a href="contactpage.html">Customer Support</a><br /><br />
+                        <a>Delivery Details</a><br /><br />
+                        <a>Terms & Conditions</a><br /><br />
+                        <a">Privacy Policy</a>
+                    </nav>
+                </div>
+                <div class="footer-menu">
+                    <h3 class="footer-menu-title">RESOURCES</h3>
+                    <nav class="footer-menu-links">
+                        <a>Free eBook</a><br /><br />
+                        <a>Development Tutorial</a><br /><br />
+                        <a>How to - Blog</a><br /><br />
+                        <a>Youtube Playlist</a>
+                    </nav>
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <div class="horizontal-divider"></div>
+            <div class="alling-copy">
+                <div class="copyright-text">LETSHOP.CO © 2000-2023, All Rights Reserved</div>
+    
+                <div class="payment-icons-wrapper">
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c9bc555770aade8ae2ea67e64d20f54628040816316e8eebd501002f9086dfce?placeholderIfAbsent=true&apiKey=b10f70cc77814b9faaff3aed5d5026b9"
+                        class="payment-icon" alt="payment accept icon" />
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/516039ee8f501b6ebddd9b7f56b4a8d077fa0af0d2dbf35d5d51e638417129a7?placeholderIfAbsent=true&apiKey=b10f70cc77814b9faaff3aed5d5026b9"
+                        class="payment-icon" alt="payment accept icon" />
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/554f9657649cda48ad8c5009211628367357505ae929d7f35c3277fe89eef3e9?placeholderIfAbsent=true&apiKey=b10f70cc77814b9faaff3aed5d5026b9"
+                        class="payment-icon" alt="payment accept icon" />
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/d50d740e003048aebcbc7bce4daf07f781c7bfe7189f680f951080c8f7129d52?placeholderIfAbsent=true&apiKey=b10f70cc77814b9faaff3aed5d5026b9"
+                        class="payment-icon" alt="payment accept icon" />
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/a9e1881b3f780aed38acb01dae3014630f92244c830f3a5f5b1c50678d5cb2f9?placeholderIfAbsent=true&apiKey=b10f70cc77814b9faaff3aed5d5026b9"
+                        class="payment-icon" alt="payment accept icon" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="contactjs.js"></script>
+    <!-- External Icon Usage -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
